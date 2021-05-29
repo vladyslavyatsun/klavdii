@@ -1,25 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <title>A Static Email Form Example</title>
-  <link rel="stylesheet" href="css/index.css">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>contact</title>
 </head>
+
 <body>
-  <h1>A Static Email Form Example</h1>
-  <fieldset>
-    <legend>Contact Me</legend>
-    <form action="https://formspree.io/f/mvodarbd" method="POST">
-      <label>
-        Your email address
-        <input name="from" type="email" required>
-      </label>
-      <label>
-        <textarea name="md" rows="10" required></textarea>
-      </label>
-      <input name="submit" type="submit">
+
+<link href="index.css" rel="stylesheet">
+
+<div class="fcf-body">
+
+    <div id="fcf-form">
+    <h3 class="fcf-h3">Have a problem? Just describe it</h3>
+
+    <form id="fcf-form-id" class="fcf-form-class" action="https://formspree.io/f/mrgrqkad" method="POST">
+
+        <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address:</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message:</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        </div>
+
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+
     </form>
-  </fieldset>
+    </div>
+
+</div>
+
 </body>
 </html>
